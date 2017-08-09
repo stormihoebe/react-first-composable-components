@@ -6,12 +6,12 @@ import Avatar from './components/Avatar';
 
 function AvatarA(props){
   return(
-    <Avatar backgroundColor="red">A</Avatar>
+    <Avatar color="white" backgroundColor="red">A</Avatar>
   )
 }
 function AvatarPizza(props){
   return(
-    <Avatar backgroundColor="yellow">🍕</Avatar>
+    <Avatar color="pink" backgroundColor="yellow">🍕</Avatar>
   )
 }
 class App extends Component {
@@ -20,7 +20,7 @@ class App extends Component {
       <div className="App">
         <WelcomeDialog/>
         <GoodbyeDialog/>
-        <Avatar backgroundColor="blue">HEY</Avatar>
+        <Avatar color="red" backgroundColor="blue">HEY</Avatar>
         <AvatarA />
         <AvatarPizza/>
       </div>

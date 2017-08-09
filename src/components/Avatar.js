@@ -10,7 +10,9 @@ function Avatar(props) {
     background: `${props.backgroundColor}`,
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    color: `${props.color}`,
+    fontWeight: 'bold'
   }
   return (
     <div style={avatarStyle}>
