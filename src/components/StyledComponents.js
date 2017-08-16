@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 
 const Wrapper = styled.section`
 padding: 4rem;
@@ -18,11 +18,29 @@ margin: auto;
 const PurpleTitle = Title.extend`
 color: purple;
 `;
+
+const rotate = keyframes`
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+`;
+const Spinner = styled.div`
+  animation:${rotate} 2s linear infinite;
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 50%;
+  height: 97px;
+`;
+
 function StyledComponents(){
   return (
     <Wrapper primary={true}>
       <PurpleTitle>Hello World</PurpleTitle>
       <Input placeholder="This is where you type"></Input>
+      <Spinner>🦎</Spinner>
     </Wrapper>
   );
 }
