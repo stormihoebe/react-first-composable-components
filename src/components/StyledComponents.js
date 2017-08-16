@@ -4,9 +4,6 @@ import styled from 'styled-components';
 const Wrapper = styled.section`
 padding: 4rem;
 background: ${(props)=> props.primary ? 'black' : 'yellow'};
-display: flex;
-justify-content: center;
-align-items: center;
 `;
 const Title = styled.h1`
 font-size: 2rem;
@@ -15,6 +12,8 @@ text-align: center;
 margin: 3px;
 `
 const Input = styled.input`
+display:block;
+margin: auto;
 `;
 
 function StyledComponents(){
