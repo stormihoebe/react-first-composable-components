@@ -4,6 +4,7 @@ import  GoodbyeDialog from './components/GoodbyeDialog';
 import Avatar from './components/Avatar';
 import StyledComponents from './components/StyledComponents';
 import ButtonRow from './components/ButtonRow';
+import StyledComponentAvatar from './components/StyledComponentAvatar';
 
 function AvatarA(props){
   return(
@@ -19,6 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <StyledComponentAvatar color="yellow" backgroundColor="orange" size="80px" hoverColor="red">🍕</StyledComponentAvatar>
         <ButtonRow/>
         <StyledComponents/>
         <WelcomeDialog/>
