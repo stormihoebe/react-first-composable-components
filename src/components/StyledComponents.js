@@ -15,11 +15,13 @@ const Input = styled.input`
 display:block;
 margin: auto;
 `;
-
+const PurpleTitle = Title.extend`
+color: purple;
+`;
 function StyledComponents(){
   return (
     <Wrapper primary={true}>
-      <Title>Hello World</Title>
+      <PurpleTitle>Hello World</PurpleTitle>
       <Input placeholder="This is where you type"></Input>
     </Wrapper>
   );
