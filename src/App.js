@@ -3,6 +3,7 @@ import  WelcomeDialog from './components/WelcomeDialog';
 import  GoodbyeDialog from './components/GoodbyeDialog';
 import Avatar from './components/Avatar';
 import StyledComponents from './components/StyledComponents';
+import ButtonRow from './components/ButtonRow';
 
 function AvatarA(props){
   return(
@@ -18,6 +19,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <ButtonRow/>
         <StyledComponents/>
         <WelcomeDialog/>
         <GoodbyeDialog/>

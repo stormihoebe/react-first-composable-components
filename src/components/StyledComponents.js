@@ -41,6 +41,7 @@ function StyledComponents(){
       <PurpleTitle>Hello World</PurpleTitle>
       <Input placeholder="This is where you type"></Input>
       <Spinner>🦎</Spinner>
+      <Spinner>🦉</Spinner>
     </Wrapper>
   );
 }
