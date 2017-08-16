@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import  WelcomeDialog from './components/WelcomeDialog';
 import  GoodbyeDialog from './components/GoodbyeDialog';
 import Avatar from './components/Avatar';
+import StyledComponents from './components/StyledComponents';
 
 function AvatarA(props){
   return(
@@ -17,6 +18,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <StyledComponents/>
         <WelcomeDialog/>
         <GoodbyeDialog/>
         <Avatar color="red" backgroundColor="blue">HEY</Avatar>
